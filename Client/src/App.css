@@ -1,0 +1,110 @@
+.App{
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700 ;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  background-image: url(./images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  height: 30%;
+  width: 100vw;
+  align-items: center;
+}
+.switch{
+  cursor: pointer;
+  height: 75px;
+  width: 75px;
+  
+}
+body{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: relative;
+  top: -5rem;
+}
+p{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.card{
+  width: 40vw;
+  height: 2vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px hsl(236, 33%, 92%) solid;
+}
+.first {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.title{
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5800e6, 0 0 40px #8a00e6, 0 0 50px #3200e6, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.checked {
+  background-image: var(--check-background);
+  border-radius: 50%;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  border: 1px solid rgb(73, 74, 145);
+  border-radius: 50%;
+}
+.status:hover {
+  cursor: pointer;
+  border-color: rgb(165, 166, 241);
+}
+input[type=text]{
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type=text]:focus {
+  background-color:rgba(255, 255, 255, 0);
+
+}
